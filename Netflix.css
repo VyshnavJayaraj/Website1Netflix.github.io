@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+    
+    
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%),url(images/IN-en-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:10px 8% ;
+    position: relative;
+    
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 180px;
+    height: 110px;
+    cursor: pointer;
+}
+nav button{
+    font-size: 17px;
+    margin-left: 10px;
+
+}
+.navbtn1{
+    width: 130px;
+    height: 35px;
+    background: #00000078;
+    color: white;
+    border-width: 1px;
+    font-size: 18px;
+    text-align-last: center;
+    border-radius: 5px;
+    border-color:rgba(128,128,128,0.7);
+    margin-right: 10px;
+  
+}
+.navbtn2{   
+   
+    width: 80px;
+    height: 35px;
+    background: red;
+    color: white;
+    border-width: 1px;
+    border-radius: 5px;
+   
+    cursor: pointer;
+
+}
+.navbtn2:hover{
+    background-color: rgb(210, 20, 20);
+}
+.headercontent{
+   position: relative;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   margin-top: 100px;
+ 
+}
+.headercontent h1{
+    font-size: 3rem;
+    line-height: 55px;
+    font-weight: 900;
+   
+}
+.headercontent h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.headercontent h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+
+}
+.faq h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.email{
+    height: 60px;
+    background: #000000a7;
+    font-size: 19px;
+    border-radius: 4px;
+    border-color:rgb(73, 70, 70);
+    border: px solid;
+    border: 1px;
+    border-style: ridge;
+    width: 400px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.start{
+    background-color: red;
+    color: #fff;
+    height: 60px;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-height: 3.5rem;
+    cursor: pointer;
+   
+}
+.start:hover{
+    background: rgb(192, 18, 18);
+}
+.features{
+   
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-top: 10px solid #303030;    
+}
+.textcol{
+   flex-basis: 50%;
+   margin-bottom: 20px;
+   padding: 0 40px;
+  
+}
+.textcol h2{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.textcol p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.imgcol{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.imgcol img{
+    display: flex;
+    width: 100%;
+    margin: auto;
+
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    border-top: 10px solid #303030;
+    margin-bottom: 70px;
+
+}
+.faq h2{
+    font-weight: 900;
+    font-size: 50px;
+
+}
+.accordian{
+    max-width: 750px;
+    width: 100%;
+    margin: 20px 16px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+  
+}
+.accordian li label{
+    display:flex ;
+    width: 1210px;
+    align-items: center;
+    padding: 30px;
+    font-size: 25px;
+    font-weight:500;
+    background: #303030;
+    margin-top: 2px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 0px;
+    height: 90px;
+    
+
+}
+
+
+label::after{
+    content: '+';
+    
+    font-size: 65px;
+    position: 20px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.2s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    width: 1210px;
+    font-size: 25px;
+    transition: max-height 0.3s, padding 0.3s;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(45deg);
+}
+.rowcontent{
+    padding: 50px 15% 10px;
+    align-items: center;
+    display: flex;
+}
+.footer{
+    
+    border-top: 10px solid #333;
+   
+}
+.rowfoot{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+        
+}
+.footer{
+    padding: 50px 15% 10px;
+    color: #9b9797;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 45px;
+}
+.footer .col{
+    flex-basis: 33.33%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer a{
+    display: block;
+    color: #9b9797;
+    line-height: 30px;
+}
+.footer .navbtn1{
+    margin-top: 20px;
+}
+.text{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.faq ul li label:hover{
+    background-color: rgb(96, 94, 94);
+}
